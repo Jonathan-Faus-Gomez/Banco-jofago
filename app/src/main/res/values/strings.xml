@@ -4,4 +4,6 @@
     <string name="usuario">Introduce el usuario</string>
     <string name="required">Obligatorio</string>
     <string name="password">Introduce la contraseña</string>
+    <string name="entrar">Entrar</string>
+    <string name="salir">Salir</string>
 </resources>
