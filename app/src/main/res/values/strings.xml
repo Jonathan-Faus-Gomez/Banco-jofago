@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Banco-jofago</string>
+    <string name="titulo">Iniciar sesión</string>
+    <string name="usuario">Introduce el usuario</string>
+    <string name="required">Obligatorio</string>
+    <string name="password">Introduce la contraseña</string>
+</resources>
