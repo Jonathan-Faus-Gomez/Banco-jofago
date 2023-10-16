@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <include layout="@layout/activity_bottomappbar"/>
     <!--al hacer match en height ocupa todo el contenido -->
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,12 +30,13 @@
                     android:src="@drawable/avatar"
                     />
                 <TextView
+                    android:id="@+id/bienvenido"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_margin="20dp"
+                    android:layout_margin="30dp"
                     app:layout_constraintStart_toEndOf="@+id/avatar"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:text="hola muy buenas"
+
 
 
 
