@@ -4,6 +4,12 @@
     <string name="usuario">Introduce el usuario</string>
     <string name="required">Obligatorio</string>
     <string name="password">Introduce la contraseña</string>
-    <string name="entrar">Entrar</string>
-    <string name="salir">Salir</string>
+    <string name="entrar">ENTRAR</string>
+    <string name="salir">SALIR</string>
+    <string name="posicion">POSICIÓN GLOBAL</string>
+    <string name="movimientos">MOVIMIENTOS</string>
+    <string name="cambio_password">CAMBIAR CONTRASEÑA</string>
+    <string name="promociones">PROMOCIONES</string>
+    <string name="cajeros">CAJEROS</string>
+    <string name="transferencias">TRANSFERENCIAS</string>
 </resources>

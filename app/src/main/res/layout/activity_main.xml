@@ -7,13 +7,14 @@
     tools:context=".MainActivity">
 
     <include layout="@layout/activity_bottomappbar"/>
-    <!--al hacer match en height ocupa todo el contenido -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         >
         <com.google.android.material.card.MaterialCardView
+            android:id="@+id/bienvenida"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
@@ -42,7 +43,101 @@
 
                     />
 
+
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+            <Button
+                android:id="@+id/posicion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/posicion"
+                android:background="@drawable/square_button_background"
+
+             />
+            <Button
+                android:id="@+id/movimientos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/posicion"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/movimientos"
+                android:layout_marginTop="@dimen/margin_top_button"
+                android:background="@drawable/square_button_background"
+                />
+            <Button
+                android:id="@+id/transferencias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/movimientos"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/transferencias"
+                android:layout_marginTop="@dimen/margin_top_button"
+                android:background="@drawable/square_button_background"
+
+                />
+            <Button
+                android:id="@+id/cambiar_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/transferencias"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/cambio_password"
+                android:layout_marginTop="@dimen/margin_top_button"
+                android:background="@drawable/square_button_background"
+                />
+            <Button
+                android:id="@+id/promociones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cambiar_password"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/promociones"
+                android:layout_marginTop="@dimen/margin_top_button"
+                android:background="@drawable/square_button_background"
+                />
+            <Button
+                android:id="@+id/cajeros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/promociones"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/cajeros"
+                android:layout_marginTop="@dimen/margin_top_button"
+                android:background="@drawable/square_button_background"
+                />
+                />
+            <Button
+                android:layout_marginTop="@dimen/margin_top_button"
+                android:id="@+id/salir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cajeros"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/salir"
+                android:background="@drawable/square_button_background"
+                />
+
+                />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         </com.google.android.material.card.MaterialCardView>
