@@ -12,4 +12,6 @@
     <string name="promociones">PROMOCIONES</string>
     <string name="cajeros">CAJEROS</string>
     <string name="transferencias">TRANSFERENCIAS</string>
+    <string name="password2">Vuelve a introducir la contraseña</string>
+    <string name="enviar">ENVIAR</string>
 </resources>
