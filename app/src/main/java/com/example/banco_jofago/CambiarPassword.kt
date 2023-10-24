@@ -4,7 +4,7 @@ import com.example.banco_jofago.databinding.ActivityCambiarPasswordBinding;
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.banco_jofago.databinding.ActivityLoginBinding
+
 
 public class CambiarPassword : AppCompatActivity(){
     private lateinit var binding: ActivityCambiarPasswordBinding
