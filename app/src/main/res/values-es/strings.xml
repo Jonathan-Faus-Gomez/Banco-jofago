@@ -14,4 +14,5 @@
     <string name="transferencias">TRANSFERENCIAS</string>
     <string name="password2">Vuelve a introducir la contraseña</string>
     <string name="enviar">ENVIAR</string>
+    <string name="bienvenido">Bienvenido</string>
 </resources>

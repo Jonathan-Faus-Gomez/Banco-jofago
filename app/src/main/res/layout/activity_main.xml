@@ -31,13 +31,27 @@
                     android:src="@drawable/avatar"
                     />
                 <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    app:layout_constraintStart_toStartOf="@+id/avatar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/bienvenido"
+                    android:text="@string/bienvenido"
+                    android:gravity="center_horizontal"
+
+
+                    />
+                <TextView
                     android:id="@+id/bienvenido"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_margin="30dp"
-                    app:layout_constraintStart_toEndOf="@+id/avatar"
+                    app:layout_constraintStart_toStartOf="@+id/avatar"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-
+                    android:gravity="center_horizontal"
 
 
 
