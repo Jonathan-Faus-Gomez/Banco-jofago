@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.cambiarPassword.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java )
+            val intent = Intent(this, CambiarPasswordActivity::class.java )
             startActivity(intent)
         }
     }

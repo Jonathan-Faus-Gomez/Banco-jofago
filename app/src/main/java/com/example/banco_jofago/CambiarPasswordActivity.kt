@@ -6,7 +6,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
 
-public class CambiarPassword : AppCompatActivity(){
+public class CambiarPasswordActivity : AppCompatActivity(){
     private lateinit var binding: ActivityCambiarPasswordBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
