@@ -1,17 +1,17 @@
 <resources>
-    <string name="app_name">Banco-jofago</string>
-    <string name="titulo">Iniciar sesión</string>
-    <string name="usuario">Introduce el usuario</string>
-    <string name="required">Obligatorio</string>
-    <string name="password">Introduce la contraseña</string>
-    <string name="entrar">ENTRAR</string>
-    <string name="salir">SALIR</string>
-    <string name="posicion">POSICIÓN GLOBAL</string>
-    <string name="movimientos">MOVIMIENTOS</string>
-    <string name="cambio_password">CAMBIAR CONTRASEÑA</string>
-    <string name="promociones">PROMOCIONES</string>
-    <string name="cajeros">CAJEROS</string>
-    <string name="transferencias">TRANSFERENCIAS</string>
-    <string name="password2">Vuelve a introducir la contraseña</string>
-    <string name="enviar">ENVIAR</string>
+<string name="app_name">Banco-jofago</string>
+<string name="titulo">Log in</string>
+<string name="usuario">Enter the user</string>
+<string name="required">Required</string>
+<string name="password">Enter the password</string>
+<string name="entrar">LOGIN</string>
+<string name="salir">LOGOUT</string>
+<string name="posicion">GLOBAL POSITION</string>
+<string name="movimientos">MOVEMENTS</string>
+<string name="cambio_password">CHANGE PASSWORD</string>
+<string name="promociones">PROMOTIONS</string>
+<string name="cajeros">ATMs</string>
+<string name="transferencias">TRANSFERS</string>
+<string name="password2">Re-enter the password</string>
+<string name="enviar">SEND</string>
 </resources>
