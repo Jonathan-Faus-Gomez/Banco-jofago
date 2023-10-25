@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         val dni = intent.getStringExtra("dni")
 
         // Actualiza el mensaje de bienvenida con el número de DNI
-        binding.bienvenido.text = "Bienvenido/a, $dni"
+        binding.bienvenido.text = dni
 
 
         binding.cambiarPassword.setOnClickListener{
