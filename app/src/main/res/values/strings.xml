@@ -15,8 +15,9 @@
     <string name="password2">Re-enter the password</string>
     <string name="enviar">SEND</string>
     <string name="bienvenido">Welcome</string>
-    <string name="transferencia">Transferencias</string>
-    <string name="propia">Cuenta propia</string>
-    <string name="ajena">Cuenta ajena</string>
+    <string name="transferencia">Transfers</string>
+    <string name="propia">Own account</string>
+    <string name="ajena">Third-party account</string>
     <string name="cancelar">CANCEL</string>
+    <string name="cantidad">Quantity:</string>
 </resources>

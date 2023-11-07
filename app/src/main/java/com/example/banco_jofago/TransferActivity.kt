@@ -27,7 +27,7 @@ class TransferActivity : AppCompatActivity() {
                     text_ajena.visibility = View.INVISIBLE
                 }
                 R.id.cuenta_ajena -> {
-                    spinner_propia.visibility = View.GONE
+                    spinner_propia.visibility = View.INVISIBLE
                     text_ajena.visibility = View.VISIBLE
                 }
             }
@@ -41,6 +41,7 @@ class TransferActivity : AppCompatActivity() {
         }
 
         btnCancelar.setOnClickListener {
+
         }
     }
 }

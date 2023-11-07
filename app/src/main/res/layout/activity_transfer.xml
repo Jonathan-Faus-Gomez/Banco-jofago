@@ -28,7 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         android:gravity="center_horizontal"
-        
+
         />
 
 
@@ -79,7 +79,7 @@
         android:id="@+id/spinner_propia"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,7 +96,7 @@
         android:layout_height="wrap_content"
         android:hint="Cuenta de destino"
         android:visibility="invisible"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="30dp"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -104,7 +104,26 @@
         app:layout_constraintTop_toBottomOf="@id/elegir"
         />
 
+    <TextView
+        android:id="@+id/cantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner_propia"
+        android:text="@string/cantidad"
 
+        />
+    <EditText
+        android:id="@+id/cantidad_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf=""
+        app:layout_constraintTop_toBottomOf="@id/spinner_propia"
+        />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/boton_enviar"
@@ -135,7 +154,6 @@
         >
 
     </com.google.android.material.button.MaterialButton>
-
 
 
 
