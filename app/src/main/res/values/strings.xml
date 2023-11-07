@@ -19,5 +19,5 @@
     <string name="propia">Own account</string>
     <string name="ajena">Third-party account</string>
     <string name="cancelar">CANCEL</string>
-    <string name="cantidad">Quantity:</string>
+    <string name="cantidad">Amount:</string>
 </resources>
