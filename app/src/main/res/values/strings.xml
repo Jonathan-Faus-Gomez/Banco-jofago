@@ -20,4 +20,7 @@
     <string name="ajena">Third-party account</string>
     <string name="cancelar">CANCEL</string>
     <string name="cantidad">Amount:</string>
+    <string name="cuentas">Accounts</string>
+    <string name="seleccion">"Select the account: "</string>
+    <string name="ultimos">Last movements:</string>
 </resources>

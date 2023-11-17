@@ -1,4 +1,4 @@
-package com.example.banco_jofago
+package com.example.banco_jofago.activities
 
 import android.os.Bundle
 import android.view.View
@@ -10,6 +10,7 @@ import android.widget.RadioGroup
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.banco_jofago.R
 import com.example.banco_jofago.databinding.ActivityTransferBinding
 
 class TransferActivity : AppCompatActivity() {

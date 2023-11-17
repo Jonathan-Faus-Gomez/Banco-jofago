@@ -1,9 +1,12 @@
-package com.example.banco_jofago
+package com.example.banco_jofago.activities
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.banco_jofago.bd.MiBancoOperacional
 import com.example.banco_jofago.databinding.ActivityLoginBinding
+import com.example.banco_jofago.pojo.Cliente
 
 class LoginActivity : AppCompatActivity(){
     private lateinit var binding: ActivityLoginBinding
@@ -19,9 +22,24 @@ class LoginActivity : AppCompatActivity(){
                 binding.usuario.error="Por favor rellene el usuario"
                 binding.password.error="Por favor rellene la contraseña"
             } else {
-                val intent = Intent(this, MainActivity::class.java )
-                intent.putExtra("dni",dni)
-                startActivity(intent)
+
+
+                var cliente = Cliente()
+                cliente.setNif(dni)
+                cliente.setClaveSeguridad(password)
+
+                val mbo: MiBancoOperacional? = MiBancoOperacional.getInstance(this)
+
+                val resultado = mbo?.login(cliente) ?: -1
+
+                if(resultado == -1) {
+                    Toast.makeText(this, "ERROR: No se ha podido iniciar sesión", Toast.LENGTH_LONG).show()
+                }else{
+                    val intent = Intent(this, MainActivity::class.java )
+                    intent.putExtra("Cliente",cliente)
+                    startActivity(intent)
+                }
+
             }
         }
 

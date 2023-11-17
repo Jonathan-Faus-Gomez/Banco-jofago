@@ -19,5 +19,8 @@
     <string name="propia">Cuenta propia</string>
     <string name="ajena">Cuenta ajena</string>
     <string name="cancelar">CANCELAR</string>
-    <string name="cantidad">Quantity:</string>
+    <string name="cantidad">Cantidad:</string>
+    <string name="cuentas">Cuentas</string>
+    <string name="seleccion">"Selecciona la cuenta: "</string>
+    <string name="ultimos">Últimos movimientos:</string>
 </resources>
