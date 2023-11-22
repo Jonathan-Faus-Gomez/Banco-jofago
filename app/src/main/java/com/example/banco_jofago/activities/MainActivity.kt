@@ -1,7 +1,6 @@
 package com.example.banco_jofago.activities
 
 
-import GlobalPositionActivity
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

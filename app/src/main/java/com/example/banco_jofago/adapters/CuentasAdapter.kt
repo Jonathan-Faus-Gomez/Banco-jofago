@@ -6,12 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.banco_jofago.R
 import com.example.banco_jofago.pojo.Cuenta
 
-class CuentasAdapter : RecyclerView.Adapter<CuentasAdapter.CuentaViewHolder>() {
-    private var cuentas: ArrayList<Cuenta> = ArrayList()
-
-    fun submitList(cuentasList: ArrayList<Cuenta>?) {
-        cuentas = cuentasList ?: ArrayList()
-    }
+class CuentasAdapter(private var cuentas: ArrayList<Cuenta>) : RecyclerView.Adapter<CuentasAdapter.CuentaViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CuentaViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_cuenta, parent, false)

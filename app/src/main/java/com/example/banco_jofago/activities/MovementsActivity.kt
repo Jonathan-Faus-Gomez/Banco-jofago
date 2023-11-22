@@ -34,19 +34,20 @@ class MovementsActivity : AppCompatActivity() {
         spinner = findViewById(R.id.spinner)
 
         // Obtén la lista de cuentas del usuario
-        val cuentasList: List<Cuenta>? = obtenerCuentasUsuario()
-        val cliente = intent.getSerializableExtra("Cliente") as Cliente
 
-        // Configura el adaptador para el Spinner
-        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, cuentasList.orEmpty())
+        val cliente = intent.getSerializableExtra("Cliente") as Cliente
+        val miBancoOperacional = MiBancoOperacional.getInstance(this)
+        val cuentas = miBancoOperacional?.getCuentas(cliente)as ArrayList<Cuenta>
+
+        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, cuentas)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter = adapter
 
-        // Maneja los eventos de selección en el Spinner
+
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parentView: AdapterView<*>, selectedItemView: View?, position: Int, id: Long) {
                 // Cuando se selecciona una cuenta, obtén los movimientos y actualiza el RecyclerView
-                selectedCuenta = cuentasList?.get(position)
+                selectedCuenta = cuentas?.get(position)
                 actualizarMovimientos(selectedCuenta)
             }
 

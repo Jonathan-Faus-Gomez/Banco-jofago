@@ -7,7 +7,7 @@ import com.example.banco_jofago.databinding.ActivityCambiarPasswordBinding
 import com.example.banco_jofago.pojo.Cliente
 
 
-public class CambiarPasswordActivity : AppCompatActivity(){
+class CambiarPasswordActivity : AppCompatActivity(){
     private lateinit var binding: ActivityCambiarPasswordBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
