@@ -23,4 +23,6 @@
     <string name="cuentas">Accounts</string>
     <string name="seleccion">"Select the account: "</string>
     <string name="ultimos">Last movements:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
